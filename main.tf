@@ -36,7 +36,7 @@ module "azure_vnet_1" {
 
 
 module "azure_aks_1" {
-    source = "./modules/aws-aks-1"
+    source = "./modules/azure-aks-1"
     cluster_name = "aks-1"
     location = var.azure_location
     subnet_id = module.azure_vnet_1.subnet_id

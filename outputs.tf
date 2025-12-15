@@ -1,8 +1,3 @@
-output "eks_cluster" {
-value = module.eks.cluster_name
-}
-
-
-output "aks_cluster" {
-value = module.aks.cluster_name
-}
+output "eks1_endpoint" { value = module.aws_eks_1.endpoint }
+output "eks2_endpoint" { value = module.aws_eks_2.endpoint }
+output "aks_endpoint" { value = module.azure_aks_1.endpoint }
